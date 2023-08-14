@@ -19,9 +19,9 @@ module "sandbox" {
     change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
   }
 
-  custom_fields = {
-    group = "non-prod"
-  }
+  # custom_fields = {
+  #   group = "non-prod"
+  # }
 
   account_customizations_name = "sandbox"
 }

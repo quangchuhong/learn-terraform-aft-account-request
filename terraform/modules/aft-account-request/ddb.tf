@@ -20,6 +20,6 @@ resource "aws_dynamodb_table_item" "account-request" {
     }
     account_tags                = { S = jsonencode(var.account_tags) }
     account_customizations_name = { S = var.account_customizations_name }
-    custom_fields               = { S = jsonencode(var.custom_fields) }
+    #custom_fields               = { S = jsonencode(var.custom_fields) }
   })
 }

@@ -1,4 +1,4 @@
-module "sandbox" {
+module "sandbox10" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
@@ -17,6 +17,10 @@ module "sandbox" {
   change_management_parameters = {
     change_requested_by = "HashiCorp"
     change_reason       = "Learn"
+  }
+
+  custom_fields = {
+    group = "non-prod"
   }
 
   account_customizations_name = "sandbox"
